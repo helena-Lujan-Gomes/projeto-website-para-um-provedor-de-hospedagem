@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/********************/
+/* 1. Estilos Globais
+/* 2. Header
+/* 3. Main
+/* 4. Footer
+/********************/
+
+
+
+/********************/
+/* 1. Estilos Globais
+/********************/
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+/********************/
+/* 2. Header
+/********************/
+
+#topo {
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #2f86d6;
+    border-bottom: 1px solid #f1f3f7;
+}
+
+.topo-logo,
+.rodape-logo {
+    display: flex;
+}
+
+.topo-logo img,
+.rodape-logo img {
+    width: 80px;
+}
+
+.topo-logo div,
+.rodape-logo div {
+    margin-left: 15px;
+}
+
+.topo-logo p,
+.rodape-logo p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo-links a {
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.topo-links a:hover {
+    color: #233032;
+}
+
+/********************/
+/* 3. Main
+/********************/
+
+#conteudo-principal {
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celula-cabecalho,
+td {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+}
+
+.celula-cabeçalho p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a8a4a4;
+}
+
+.celula-cabeçalho h3 {
+    font-size: 36px;
+}
+
+.cabeçalho-da-tabela th:first-child {
+    visibility: hidden;
+}
+
+.cabeçalho-da-tabela th:hover {
+    background-color: #2f86d6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cabeçalho-da-tabela:nth-child(1) {
+    background-color: #f1f3f7;
+}
+
+.linhasDaTabela td:nth-child(1) {
+    background-color: #f1f3f7;
+    font-weight: 500;
+    text-align: left;
+}
+
+.marcador-azul::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #2f86d6;
+    border-radius: 100px;
+}
+
+/********************/
+/* 4. Footer
+/********************/
+
+#rodape {
+    padding-top: 70px;
+    background-color: #2f86d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #f1f3f7;
+}
+
+.container-texto-rodape {
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px 70px;
+}
+
+.container-dev {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #ffffff;
+}
+
+.container-dev span {
+    color: #2f86d6;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .topo-logo {
+        max-width: 1024px;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 40px;
+    }
+
+    .topo-logo h1 {
+        font-size: 18px;
+    }
+
+    .topo-logo p {
+        font-size: 13px;
+    }
+
+    #container-tabela {
+        overflow-x: auto;
+        width: 100vw;
+    }
+
+}

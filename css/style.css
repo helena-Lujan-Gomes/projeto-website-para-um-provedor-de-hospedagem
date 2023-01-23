@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/********************/
+/* 1. Estilos Globais
+/* 2. Header
+/* 3. Seção Banner
+/* 4. Seção Primeiro Anúncio
+/* 5. Seção Info
+/* 6. Seção Tabela de Planos
+/* 7. Seção Segundo Anúncio
+/* 8. Footer
+/********************/
+
+
+
+/********************/
+/* 1. Estilos Globais
+/********************/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/********************/
+/* 2. Header
+/********************/
+#topo {
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #ffffff;
+}
+
+.topo-logo,
+.rodape-logo {
+    display: flex;
+}
+
+.topo-logo img,
+.rodape-logo img {
+    width: 80px;
+}
+
+.topo-logo div,
+.rodape-logo div {
+    margin-left: 15px;
+}
+
+.topo-logo p,
+.rodape-logo p {
+    color: #2f86d6;
+    font-weight: 600;
+}
+
+.topo-links a {
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #233032;
+}
+
+.topo-links a:hover,
+.container-dev span,
+.secao-informacoes h2 span,
+.secao-tabela-de-planos h2 span {
+    color: #2f86d6;
+}
+
+/********************/
+/* 3. Seção Banner
+/********************/
+
+.secao-banner {
+    background-color: #2f86d6;
+}
+
+.container-banner {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 85px 0px;
+}
+
+.container-texto-banner {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.container-texto-banner p {
+    font-size: 16px;
+    line-height: 26px;
+    word-spacing: 3px;
+}
+
+.container-texto-banner h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+/********************/
+/* 4. Seção Primeiro Anúncio
+/********************/
+
+.secao-primeiro-anuncio {
+    background-color: #23303e;
+    padding: 0px 20px;
+    color: #ffffff;
+}
+
+.secao-primeiro-anuncio h2 {
+    margin-bottom: 5px;
+}
+
+.secao-primeiro-anuncio a {
+    display: flex;
+    align-items: center;
+    background-color: #2f86d6;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    border: 0px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.secao-primeiro-anuncio a::before {
+    content: "";
+    background-image: url('../img/icone-foguete.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+/********************/
+/* 5. Seção Info
+/********************/
+
+.secao-informacoes {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.secao-informacoes h2 {
+    max-width: 900px;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+.container-informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-informacoes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-informacoes div img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.container-informacoes div p {
+    margin-top: 20px;
+}
+
+/********************/
+/* 6. Seção Tabela de Planos
+/********************/
+
+.secao-tabela-de-planos {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f3f7;
+}
+
+.secao-tabela-de-planos h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 32px;
+}
+
+.tabela {
+    border-radius: 4px;
+    box-shadow: 0px 2px 40px 15px rgba(47, 134, 214, 1);
+}
+
+.celula-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #ffffff;
+}
+
+.celula-cabecalho h3 {
+    margin-bottom: 20px
+}
+
+.celula-cabecalho img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.celula-cabecalho small {
+    width: 150px;
+    font-weight: 500;
+    color: #a89f9f;
+}
+
+.linhas-da-tabela:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.linhas-da-tabela:nth-child(even) {
+    background-color: #fff;
+}
+
+.linhas-da-tabela td {
+    width: 250px;
+    max-width: 1024px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.linhas-da-tabela td:hover {
+    background-color: #2f86d6;
+    color: #fff;
+}
+
+/********************/
+/* 7. Seção Segundo Anúncio
+/********************/
+
+.secao-segundo-anuncio {
+    padding: 0px 20px;
+    background-color: #2f86d6;
+    color: #fff;
+}
+
+.secao-segundo-anuncio h2 {
+    max-width: 550px;
+}
+
+.secao-segundo-anuncio a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: #233032;
+    color: #fff;
+    cursor: pointer;
+}
+
+.secao-segundo-anuncio a::before {
+    content: "";
+    background-image: url('../img/icone-foguete.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+/********************/
+/* 8. Footer
+/********************/
+
+#rodape {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-texto-rodape {
+    text-align: center;
+    margin: 50px 0px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-dev {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0px;
+    background-color: #f1f3f7;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .container-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo-logo {
+        max-width: 1024px;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 40px;
+    }
+
+    .topo-logo h1 {
+        font-size: 18px;
+    }
+
+    .topo-logo p {
+        font-size: 13px;
+    }
+
+    .secao-primeiro-anuncio {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .secao-primeiro-anuncio a::before,
+    .secao-segundo-anuncio a::before {
+        content: "";
+        background-image: url('../img/icone-foguete.png');
+        width: 0px;
+        height: 0px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    #container-tabela {
+        overflow-x: auto;
+        width: 100vw;
+    }
+
+}
